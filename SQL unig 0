@@ -1,0 +1,41 @@
+comando sql que faz inserção de dados
+
+INSERT INTO nome_tabela(lista de campos que vão receber os valores separado por vírgula)
+
+INSERT INTO tabela_nova (cod_cliente,nome_cliente,idade_cliente,apelido_cliente,cod_cidade)
+VALUES (1,'Aluno novo'23,'Aluninho',5)
+
+o comando SQL que faz alterações de dados em uma tabela no bando, é (update)
+
+UPDATE nome_tabela
+SET campo = novo_valor
+WHERE condição 
+
+UPDATE tabela_nova
+SET apelido_cliente = 'Alunão'
+WHERE cod_cliente = 1
+
+comando SQL que faz a exclusão de dados em uma tabela no banco, (DELETE)
+
+DELETE FROM nome_tabela
+WHERE condição 
+
+DELETE FROM tabela_nova
+WHERE cod_cliente = 1
+
+o comando para visualizar os dados é (SELECT)
+
+SELECT {campo(s)} FROM{tabela(s)}
+WHERE {condição}
+ORDER BY {campo(s)}
+GROUP BY {campo(s)}
+
+ SELECT: comando para chamar a visualização de registros (campos) da tabela, para
+referência da visualização dos registros.
+ FROM: chamada para indicar a tabela (ou as tabelas) a serem utilizadas.
+ WHERE: chamada para uma condição que deve ser verdadeira para que os registros
+sejam visualizados.
+ ORDER BY: permite ordenar a visualização de registros em função de um campo
+específico.
+ GROUP BY: permite agrupar a visualização de registros em função de um campo
+específico. Atenção: O * (asterisco) terá um papel importante neste comando.
